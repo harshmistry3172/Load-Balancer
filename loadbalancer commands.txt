@@ -1,0 +1,12 @@
+LeastConnection:-
+Terminal-1: node leastconnection.js
+Terminal-2: for /L %i in (1,1,50) do start /b curl -s http://localhost:3017/load (Vary 50 for more observations)
+
+RoundRobin:-
+Terminal-1: node roundrobin.js
+Terminal-2: curl http://localhost:3017/load
+
+FCFS:-
+Terminal-1: node index_fcfs.js
+Terminal-2: curl http://localhost:3000/load
+change port in url key to 3000 from 3017
